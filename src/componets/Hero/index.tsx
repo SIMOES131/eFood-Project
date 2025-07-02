@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { RootReducer } from '../../store'
 import { open } from '../../store/reducers/cart'
 import Logo from '../Logo'
+import logo from '../../assets/images/logo.png'
 
 import { Container } from '../../global/globalStyles'
 
@@ -33,7 +34,8 @@ const Hero = ({ textContent, title }: HeroProps) => {
       return (
         <Logo
           kind="link"
-          cover="https://raw.githubusercontent.com/BrunoOliveira16/Curso-Engenheiro-Front-End-EBAC/main/Modulo-35/ImagesEfood/logo.png"
+          cover={logo}
+          // cover="https://raw.githubusercontent.com/BrunoOliveira16/Curso-Engenheiro-Front-End-EBAC/main/Modulo-35/ImagesEfood/logo.png"
           title="Logo eFood"
           to="/"
         />
@@ -45,7 +47,8 @@ const Hero = ({ textContent, title }: HeroProps) => {
         <TitleLink to="/">{item}</TitleLink>
         <Logo
           kind="link"
-          cover="https://raw.githubusercontent.com/BrunoOliveira16/Curso-Engenheiro-Front-End-EBAC/main/Modulo-35/ImagesEfood/logo.png"
+          cover={logo}
+          //cover="https://raw.githubusercontent.com/BrunoOliveira16/Curso-Engenheiro-Front-End-EBAC/main/Modulo-35/ImagesEfood/logo.png"
           title="Logo eFood"
           to="/"
         />
